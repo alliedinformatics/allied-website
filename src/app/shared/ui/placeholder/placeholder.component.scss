@@ -1,0 +1,44 @@
+:host {
+  display: block;
+}
+
+.placeholder-title {
+  height: 1rem;
+  width: min(14rem, 72%);
+  border-radius: 999px;
+  background: linear-gradient(
+    90deg,
+    rgba(16, 28, 45, 0.08),
+    rgba(16, 28, 45, 0.14)
+  );
+}
+
+.placeholder-title--short {
+  width: min(8rem, 42%);
+}
+
+.placeholder-copy {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.placeholder-copy span,
+.placeholder-pill {
+  display: block;
+  height: 0.9rem;
+  border-radius: 999px;
+  background: linear-gradient(
+    90deg,
+    rgba(16, 28, 45, 0.06),
+    rgba(16, 28, 45, 0.11)
+  );
+}
+
+.placeholder-copy__short,
+.placeholder-pill {
+  width: 58%;
+}
+
+.placeholder-copy--tight span {
+  height: 0.78rem;
+}

@@ -1,0 +1,36 @@
+<section class="page-hero">
+  <div class="page-hero__copy">
+    @if (eyebrow()) {
+      <span class="eyebrow">{{ eyebrow() }}</span>
+    }
+
+    <h1>{{ title() }}</h1>
+
+    @if (summary()) {
+      <p>{{ summary() }}</p>
+    }
+
+    <ng-content />
+
+    @if (meta().length) {
+      <div class="meta-chip-list">
+        @for (item of meta(); track item) {
+          <span class="meta-chip">{{ item }}</span>
+        }
+      </div>
+    }
+  </div>
+
+  @if (imageUrl(); as heroImage) {
+    <div class="page-hero__visual">
+      <div class="page-hero__curve"></div>
+      <img
+        [ngSrc]="heroImage"
+        [alt]="imageAlt()"
+        width="1440"
+        height="900"
+      />
+    </div>
+  }
+</section>
+

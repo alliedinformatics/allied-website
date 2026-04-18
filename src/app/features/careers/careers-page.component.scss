@@ -1,0 +1,123 @@
+.careers-page__frame {
+  overflow: hidden;
+  padding: 0;
+}
+
+.careers-page__table {
+  padding: 1.35rem 1.1rem 1.1rem;
+}
+
+.careers-page__header,
+.careers-page__row {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) repeat(3, minmax(0, 0.75fr));
+  gap: 1rem;
+  align-items: start;
+  padding: 1rem 1.1rem;
+}
+
+.careers-page__header {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+
+.careers-page__row {
+  border-top: 1px solid var(--line);
+  transition: background-color 160ms ease;
+}
+
+.careers-page__row:hover,
+.careers-page__row:focus-within {
+  background: rgba(16, 28, 45, 0.03);
+}
+
+.careers-page__row h2 {
+  font-size: 1.08rem;
+  color: var(--ink-strong);
+}
+
+.careers-page__row h2 a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition:
+    color 160ms ease,
+    border-color 160ms ease;
+}
+
+.careers-page__row h2 a:hover {
+  color: var(--accent);
+  border-bottom-color: currentColor;
+}
+
+.careers-page__row h2 a:focus-visible {
+  color: var(--accent);
+  border-bottom-color: currentColor;
+  outline: 2px solid color-mix(in srgb, var(--accent) 45%, white);
+  outline-offset: 2px;
+  border-radius: 0.15rem;
+}
+
+.careers-page__row p {
+  margin-top: 0.35rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .careers-page__header {
+    display: none;
+  }
+
+  .careers-page__row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.65rem;
+    padding: 1rem 0.85rem;
+  }
+
+  .careers-page__row h2 a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-bottom-color: currentColor;
+  }
+
+  .careers-page__row h2 a::after {
+    content: "Tap to view";
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+
+  .careers-page__row > span {
+    display: grid;
+    grid-template-columns: 5.4rem minmax(0, 1fr);
+    gap: 0.5rem;
+    font-size: 0.94rem;
+    color: var(--ink-soft);
+  }
+
+  .careers-page__row > span::before {
+    font-size: 0.66rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+  }
+
+  .careers-page__row > span:nth-child(2)::before {
+    content: "Location";
+  }
+
+  .careers-page__row > span:nth-child(3)::before {
+    content: "Type";
+  }
+
+  .careers-page__row > span:nth-child(4)::before {
+    content: "Date";
+  }
+}

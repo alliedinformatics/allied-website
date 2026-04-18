@@ -1,0 +1,64 @@
+<section class="home-page__section">
+  <div class="home-page__heading">
+    <span class="eyebrow">{{ operational()?.eyebrow }}</span>
+    <h2>{{ operational()?.title }}</h2>
+  </div>
+
+  <div class="home-page__text-block">
+    @for (paragraph of operational()?.paragraphs ?? []; track paragraph) {
+      <p>{{ paragraph }}</p>
+    }
+
+    <blockquote class="home-page__quote">
+      "{{ operational()?.quote }}"
+    </blockquote>
+  </div>
+
+  <div class="home-page__industries-label">
+    {{ operational()?.industriesLabel }}
+  </div>
+
+  <div class="industry-grid">
+    @if (industries().length) {
+      @for (industry of industries(); track industry.title) {
+        <article class="industry-card industry-card--icon">
+          <div class="industry-card__icon-wrapper">
+            <img
+              class="industry-card__icon"
+              [src]="industry.imageUrl"
+              [alt]="industry.title"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="industry-card__title">{{ industry.title }}</h3>
+        </article>
+      }
+    } @else {
+      @for (slot of placeholderIndexes(); track slot) {
+        <article
+          class="industry-card industry-card--icon industry-card--placeholder"
+        >
+          <div class="industry-card__icon-wrapper">
+            <div
+              class="industry-card__icon industry-card__icon--placeholder"
+            ></div>
+          </div>
+          <app-placeholder [title]="true" [titleShort]="true" />
+        </article>
+      }
+    }
+  </div>
+
+  <div class="home-page__section-footer">
+    <p>
+      {{ operational()?.footerText }}
+    </p>
+
+    <a
+      class="button button--ghost"
+      [routerLink]="operational()?.footerCtaRoute"
+    >
+      {{ operational()?.footerCtaLabel }}
+    </a>
+  </div>
+</section>

@@ -1,0 +1,17 @@
+@if (title()) {
+  <div class="placeholder-title" [class.placeholder-title--short]="titleShort()"></div>
+}
+
+@if (lineIndexes().length) {
+  <div class="placeholder-copy" [class.placeholder-copy--tight]="tight()">
+    @for (lineIndex of lineIndexes(); track lineIndex) {
+      <span [class.placeholder-copy__short]="shortLastLine() && lineIndex === lineIndexes().length - 1"></span>
+    }
+  </div>
+}
+
+@if (pillIndexes().length) {
+  @for (pillIndex of pillIndexes(); track pillIndex) {
+    <span class="placeholder-pill"></span>
+  }
+}

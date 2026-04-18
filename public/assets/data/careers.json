@@ -1,0 +1,74 @@
+{
+  "pageIntro": {
+    "eyebrow": "Careers",
+    "title": "Careers",
+    "imageUrl": "assets/images/page-intros/careers-online.jpg"
+  },
+  "openings": [
+    {
+      "id": "qa-analyst-health-informatics",
+      "title": "QA Analysts (Health Informatics)",
+      "datePosted": "04/04/2026",
+      "location": "Duluth",
+      "jobType": "Full-time",
+      "summary": "Duties: Perform quality assurance and testing for health information systems and applications for health information systems. Analyze, improve healthcare data quality and operational efficiency. Develop",
+      "requirements": [
+        "Experience with QA workflows for healthcare or regulated systems.",
+        "Hands-on testing for web applications, APIs, and data validation.",
+        "Strong communication and documentation skills."
+      ]
+    },
+    {
+      "id": "software-engineer-ai-data-scientist",
+      "title": "Software Engineers (AI Data Scientist)",
+      "datePosted": "02/21/2026",
+      "location": "Duluth",
+      "jobType": "Full-time",
+      "summary": "Duties: Design, develop, and implement AI models, algorithms, and applications using Python, SQL, Power BI, Tableau, Java Script, LLMs, Gen AI, Docker, NLP, Agile, Open",
+      "requirements": [
+        "Strong Python and SQL proficiency for model and data workflows.",
+        "Experience with LLM/GenAI tooling and model lifecycle practices.",
+        "Hands-on development with cloud and container tooling."
+      ]
+    },
+    {
+      "id": "senior-software-developer-6",
+      "title": "Senior Software Developers",
+      "datePosted": "07/02/2025",
+      "location": "Duluth",
+      "jobType": "Full-time",
+      "summary": "Duties: Provide technical leadership to design, develop, analyze and implement software applications using Java, J2EE technologies, C, C++, Spring Boot, Oracle, Web Services, etc. (or).Net",
+      "requirements": [
+        "Deep experience with Java/J2EE and enterprise service architecture.",
+        "Ability to lead design and mentoring across delivery teams.",
+        "Strong debugging and performance optimization skills."
+      ]
+    },
+    {
+      "id": "senior-software-engineer",
+      "title": "Senior Software Engineers",
+      "datePosted": "04/17/2025",
+      "location": "Duluth",
+      "jobType": "Full-time",
+      "summary": "Duties: Provide technical leadership to design, develop, test and maintain web applications using XAMPP, PHP, DRUPAL, Docker, GITHUB, SOAP, Rest API, Linux, HTML, MySQL, JavaScript,",
+      "requirements": [
+        "Production experience with PHP/Drupal and modern web stacks.",
+        "Knowledge of REST/SOAP integration and Linux deployments.",
+        "Collaborative coding standards and source-control discipline."
+      ]
+    },
+    {
+      "id": "senior-software-developer-5",
+      "title": "Senior Software Developers",
+      "datePosted": "02/07/2025",
+      "location": "Duluth",
+      "jobType": "Full-time",
+      "summary": "Duties: Provide technical leadership to create, modify, test code and script for web based applications using Java, J2EE technologies, Java Script, Frameworks, Spring, HTML, CSS,",
+      "requirements": [
+        "Strong full-stack development in Java ecosystem frameworks.",
+        "Experience writing maintainable code for large web applications.",
+        "Ability to collaborate with QA and business teams effectively."
+      ]
+    }
+  ]
+}

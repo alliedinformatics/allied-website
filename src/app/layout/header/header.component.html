@@ -1,0 +1,35 @@
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" routerLink="/" aria-label="Allied Informatics home">
+      @if (siteContent().brand.logoUrl) {
+        <img
+          class="brand__logo"
+          [src]="siteContent().brand.logoUrl"
+          [alt]="siteContent().brand.name"
+        />
+      } @else {
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__text">
+          <span class="brand__name">{{ siteContent().brand.name }}</span>
+        </span>
+      }
+    </a>
+
+    <nav class="site-header__nav" aria-label="Primary">
+      @for (item of headerNavigation(); track item.path) {
+        <a
+          class="site-header__link"
+          [routerLink]="item.path"
+          routerLinkActive="site-header__link--active"
+          [routerLinkActiveOptions]="{ exact: item.path === '/' }"
+        >
+          {{ item.label }}
+        </a>
+      }
+    </nav>
+
+    <a class="button button--primary site-header__cta" routerLink="/contact">
+      Contact Us
+    </a>
+  </div>
+</header>

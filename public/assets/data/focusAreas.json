@@ -1,0 +1,17 @@
+[
+  {
+    "title": "IT Services",
+    "summary": "Reliable and scalable IT solutions to accelerate your prospects. Out-beat your competition.",
+    "imageUrl": "assets/images/home/focus-it.jpg"
+  },
+  {
+    "title": "Application Development & Maintenance",
+    "summary": "Customized software to meet bespoke needs of your business across various applications.",
+    "imageUrl": "assets/images/home/focus-apps.jpg"
+  },
+  {
+    "title": "Artificial Intelligence & Machine Learning",
+    "summary": "Agile framework and ready-made integrated intelligence to scale the impact of your business.",
+    "imageUrl": "assets/images/home/focus-ai.jpg"
+  }
+]

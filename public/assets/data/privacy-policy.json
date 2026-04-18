@@ -1,0 +1,74 @@
+{
+  "title": "Privacy Policy",
+  "lastUpdated": "01-Nov-2024",
+  "intro": [
+    "Welcome to Allied Informatics (\"we,\" \"our,\" or \"us\"). Your privacy is important to us. This policy describes how we collect, use, and protect your information when you use our website and services."
+  ],
+  "sections": [
+    {
+      "heading": "Information We Collect",
+      "paragraphs": [
+        "We may collect personal and non-personal information, including:"
+      ],
+      "bulletItems": [
+        "Personal Information: name, email, mailing address, phone number, or payment details when voluntarily provided.",
+        "Non-Personal Information: browser type, device/OS details, and pages visited."
+      ]
+    },
+    {
+      "heading": "How We Use Your Information",
+      "paragraphs": [
+        "We use your information to operate and improve our website and services, communicate updates and offers, personalize user experience, and process transactions securely."
+      ]
+    },
+    {
+      "heading": "How We Share Your Information",
+      "paragraphs": [
+        "We do not sell, trade, or rent personal information. We may share data only with trusted service providers or when legally required."
+      ]
+    },
+    {
+      "heading": "Cookies and Tracking Technologies",
+      "paragraphs": [
+        "We use cookies and similar technologies to improve user experience. You may configure browser settings to refuse some or all cookies."
+      ]
+    },
+    {
+      "heading": "Third-Party Links",
+      "paragraphs": [
+        "Our site may include links to third-party websites. We are not responsible for external privacy practices and encourage review of third-party policies."
+      ]
+    },
+    {
+      "heading": "Data Security",
+      "paragraphs": [
+        "We implement reasonable safeguards to protect your data. No internet transmission method is fully secure, so absolute security cannot be guaranteed.",
+        "Mobile information will not be shared with third parties or affiliates for marketing/promotional purposes. Text messaging originator opt-in data and consent are excluded from third-party sharing."
+      ]
+    },
+    {
+      "heading": "Your Rights and Choices",
+      "paragraphs": [
+        "Depending on your location, you may have rights to access, correct, or delete personal information. Contact us to request support."
+      ]
+    },
+    {
+      "heading": "Children's Privacy",
+      "paragraphs": [
+        "This site is not intended for children under 13. If we become aware of data collected from a child under 13, we will remove it promptly."
+      ]
+    },
+    {
+      "heading": "Changes to This Privacy Policy",
+      "paragraphs": [
+        "We may update this policy from time to time. Material changes will be posted on this page. Continued use indicates acceptance of updated terms."
+      ]
+    },
+    {
+      "heading": "Contact Us",
+      "paragraphs": [
+        "For questions about this policy or our data practices, contact us via our Contact page: /contact."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+<div class="home-page__hero">
+  <div class="home-page__copy">
+    <span class="eyebrow">{{ hero()?.eyebrow }}</span>
+
+    <h1>{{ hero()?.title }}</h1>
+
+    @if (hero()?.summary) {
+      <p>{{ hero()?.summary }}</p>
+    } @else {
+      <app-placeholder [copyLines]="3" [shortLastLine]="true" />
+    }
+
+    <div class="home-page__actions">
+      <a
+        class="button button--primary"
+        [routerLink]="hero()?.ctaRoute"
+      >
+        {{ hero()?.ctaLabel }}
+      </a>
+    </div>
+  </div>
+
+  <div class="home-page__visual">
+    <div class="home-page__curve"></div>
+    <img [src]="hero()?.imageUrl" alt="" />
+  </div>
+</div>
+
+<div
+  class="home-page__spotlight"
+  role="note"
+  [attr.aria-label]="spotlight()?.ariaLabel"
+>
+  <p>
+    {{ spotlight()?.text }}
+  </p>
+</div>

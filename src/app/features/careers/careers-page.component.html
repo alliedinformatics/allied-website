@@ -1,0 +1,49 @@
+<section class="careers-page section">
+  <div class="container careers-page__frame surface-card">
+    <app-page-hero
+      [eyebrow]="pageIntro()?.eyebrow"
+      [title]="pageIntro()?.title ?? ''"
+      [summary]="pageIntro()?.summary"
+      [imageUrl]="pageIntro()?.imageUrl"
+      imageAlt="Careers at Allied Informatics"
+    />
+
+    <section class="careers-page__table">
+      <div class="careers-page__header">
+        <span>Role</span>
+        <span>Location</span>
+        <span>Type</span>
+        <span>Date</span>
+      </div>
+
+      @if (openings().length) {
+        @for (opening of openings(); track opening.id) {
+          <article class="careers-page__row">
+            <div>
+              <h2>
+                <a [routerLink]="['/careers', opening.id]">{{ opening.title }}</a>
+              </h2>
+              @if (opening.summary) {
+                <p>{{ opening.summary }}</p>
+              }
+            </div>
+            <span>{{ opening.location || '—' }}</span>
+            <span>{{ opening.jobType || '—' }}</span>
+            <span>{{ opening.datePosted || '—' }}</span>
+          </article>
+        }
+      } @else {
+        @for (placeholder of placeholderIndexes(); track placeholder) {
+          <article class="careers-page__row">
+            <div>
+              <app-placeholder [title]="true" />
+            </div>
+            <app-placeholder [pillCount]="1" />
+            <app-placeholder [pillCount]="1" />
+            <app-placeholder [pillCount]="1" />
+          </article>
+        }
+      }
+    </section>
+  </div>
+</section>

@@ -1,0 +1,19 @@
+{
+  "pageIntro": {
+    "eyebrow": "Contact",
+    "title": "Contact us",
+    "summary": "Allied Informatics, Inc.",
+    "imageUrl": "assets/images/page-intros/contact.png"
+  },
+  "emails": ["contact@alliedinformatics.com", "sales@alliedinformatics.com"],
+  "phones": ["(770) 246 9800", "(770) 246 9098"],
+  "addressLines": [
+    "Allied Informatics, Inc.",
+    "1815 Satellite Blvd NW STE 302",
+    "Duluth GA 30097"
+  ],
+  "postalCode": "30097",
+  "socials": [],
+  "formCtaLabel": "Send inquiry",
+  "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1653.8927103004858!2d-84.08940036108183!3d33.99804499329435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5bd4450db9c73%3A0x1c140a66c048aa92!2sAllied%20Informatics%20Inc!5e0!3m2!1sen!2sus!4v1776523960248!5m2!1sen!2sus"
+}

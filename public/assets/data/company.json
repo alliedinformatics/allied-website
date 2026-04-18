@@ -1,0 +1,94 @@
+{
+  "pageIntro": {
+    "eyebrow": "About Us",
+    "title": "Allied Informatics",
+    "summary": "Allied Informatics has been in the information Technology industry for several decades. Driven with a passionate motive to change the way businesses work, we provide intelligible solutions that are crafted with innovation, intelligence and creativity.",
+    "imageUrl": "assets/images/page-intros/company-about.jpg"
+  },
+  "pageContent": {
+    "hero": {
+      "introLabel": "About Allied Informatics",
+      "lede": ""
+    },
+    "why": {
+      "title": "Why Allied Informatics?",
+      "subtitle": "Finding the Right resource at the Right Time",
+      "paragraphs": [
+        "Allied Informatics has been in the information Technology industry for several decades. Driven with a passionate motive to change the way businesses work, we provide intelligible solutions that are crafted with innovation, intelligence and creativity. Serving hundreds of clients at this moment, we are ever on the rise with the strength of our efficient employees that help clients transform their businesses with the power of modern technology.",
+        "We deliver fully integrated creative Information Technology solutions ranging all the way from personalized IT consulting services, advanced technology deployment, product deployment, cloud technology, Data analytics, eCommerce applications, artificial intelligence and machine learning.",
+        "Allied Informatics' services are reputed across both on-site and off-shore assets for driving prospects and stimulating growth by building reliable IT infrastructure using a combination of both traditional and innovative systems. From implementation to customer relationship, from timely service delivery to assured proficiency, we are bounded by our firm principles - to provide best-in-class IT solutions."
+      ],
+      "highlights": [
+        "Several decades in Information Technology with a client-first mindset",
+        "Integrated IT capabilities across consulting, deployment, cloud and analytics",
+        "Reliable on-site and off-shore delivery backed by principled execution"
+      ]
+    },
+    "mission": {
+      "title": "Our Mission",
+      "paragraph": "Allied Informatics aims to do much more than provide IT solutions to aspiring clients. In our quest towards excellence, we aim to enable newer business functions, reinvent employee relationships and strive to become the world leader in transforming the future of society's requirements.",
+      "quote": "We provide the resource you want, when and where you want!"
+    },
+    "identity": {
+      "title": "Who are we?",
+      "paragraph": "We are an expanse of specialists that are vested towards helping clients to achieve exceptional results by applying practical solutions to impossible business challenges. We change the way clients perceive their business to instigate impactful change. Founded in 1991 in Atlanta, Georgia, we have been conferred with multiple awards and milestones. Through professionalism and stringent ethical standards, our company has expanded across the world on the values of dedication, accountability and mutual respect."
+    },
+    "motto": {
+      "title": "Our Motto",
+      "paragraph": "Allied Informatics' only motto is to serve clients with solutions that actually makes a difference. Not only do we provide solutions to existing challenges but also help you anticipate potential changes in the upcoming near future. We will help you implement technologies and explore advancements through our global team of innovators."
+    },
+    "philosophy": {
+      "title": "Our Business Philosophy",
+      "paragraph": "We like to welcome challenges as an endeavor to outgrow ourselves in our vested approach towards proactively dealing with client businesses. Our beliefs lie firmly in our actions and precede our activities on the basis of how we partner with our clients. Leaving no stone unturned in tending to their requirements, we assure:",
+      "points": [
+        "Innovative and intelligible solutions to complex problems.",
+        "Nurturing positive relationships and constant flow of respect and regard to achieve mutual success.",
+        "Balancing our goals on solely the achievements of our clients' successful prospects."
+      ]
+    },
+    "stats": {
+      "founded": {
+        "label": "Founded",
+        "note": "Established in Atlanta, Georgia"
+      },
+      "zip": {
+        "label": "ZIP Code",
+        "note": "Serving locally and globally from HQ"
+      },
+      "serviceTracks": {
+        "label": "Service Tracks",
+        "note": "Integrated IT and digital capabilities"
+      },
+      "leadershipProfiles": {
+        "label": "Leadership Profiles",
+        "note": "Focused experts guiding every engagement"
+      }
+    }
+  },
+  "overview": [
+    {
+      "title": "Why Allied Informatics?",
+      "body": "Allied Informatics has been in the information Technology industry for several decades. Driven with a passionate motive to change the way businesses work, we provide intelligible solutions that are crafted with innovation, intelligence and creativity. Serving hundreds of clients at this moment, we are ever on the rise with the strength of our efficient employees that help clients transform their businesses with the power of modern technology."
+    }
+  ],
+  "philosophy": [
+    {
+      "title": "Our mission",
+      "body": "Allied Informatics aims to do much more than provide IT solutions to aspiring clients. In our quest towards excellence, we aim to enable newer business functions, reinvent employee relationships and strive to become the world leader in transforming the future of society's requirements."
+    },
+    {
+      "title": "Who we are",
+      "body": "We are an expanse of specialists that are vested towards helping clients to achieve exceptional results by applying practical solutions to impossible business challenges. We change the way clients perceive their business to instigate impactful change."
+    },
+    {
+      "title": "What drives us",
+      "body": "We like to welcome challenges as an endeavor to outgrow ourselves in our vested approach towards proactively dealing with client businesses. Our beliefs lie firmly in our actions and precede our activities on the basis of how we partner with our clients."
+    }
+  ],
+  "whoWeAre": [
+    {
+      "title": "Our motto",
+      "body": "Allied Informatics' only motto is to serve clients with solutions that actually makes a difference. Not only do we provide solutions to existing challenges but also help you anticipate potential changes in the upcoming near future."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+<section class="home-page__section">
+  <div class="home-page__heading">
+    <span class="eyebrow">{{ eyebrow() }}</span>
+    <h2>{{ title() }}</h2>
+  </div>
+
+  <div
+    class="home-page__cards home-page__cards--three home-page__cards--bordered"
+  >
+    @if (items().length) {
+      @for (item of items(); track item.title) {
+        <article class="focus-card">
+          <div class="card-media card-media--soft">
+            @if (item.imageUrl) {
+              <img
+                [ngSrc]="item.imageUrl"
+                [alt]="item.title"
+                width="640"
+                height="420"
+              />
+            }
+          </div>
+          <h3>{{ item.title }}</h3>
+          @if (item.summary) {
+            <p>{{ item.summary }}</p>
+          }
+        </article>
+      }
+    } @else {
+      @for (slot of placeholderIndexes(); track slot) {
+        <article class="focus-card focus-card--overlay focus-card--placeholder">
+          <div class="focus-card__content">
+            <app-placeholder
+              [title]="true"
+              [copyLines]="2"
+              [tight]="true"
+              [shortLastLine]="true"
+            />
+          </div>
+        </article>
+      }
+    }
+  </div>
+</section>

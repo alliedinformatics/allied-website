@@ -1,0 +1,103 @@
+.site-footer {
+  padding: 1.1rem 0 2rem;
+}
+
+.site-footer__inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 1.4rem;
+  padding: 1.35rem 1.6rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1.5rem;
+  background:
+    radial-gradient(
+      circle at 82% 8%,
+      rgba(176, 137, 67, 0.16),
+      transparent 24%
+    ),
+    radial-gradient(
+      circle at 20% 100%,
+      rgba(92, 126, 188, 0.2),
+      transparent 34%
+    ),
+    linear-gradient(180deg, #112035 0%, #0d1728 100%);
+  color: rgba(244, 241, 234, 0.86);
+}
+
+.site-footer__brand {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.site-footer__logo {
+  width: clamp(9.2rem, 14vw, 10.8rem);
+  height: auto;
+  display: block;
+  border-radius: 0.35rem;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.16);
+}
+
+.site-footer__nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 1rem;
+  font-size: 0.98rem;
+  color: rgba(244, 241, 234, 0.82);
+}
+
+.site-footer__nav a {
+  position: relative;
+  padding: 0.2rem 0;
+  transition:
+    color 180ms ease,
+    opacity 180ms ease;
+  opacity: 0.88;
+}
+
+.site-footer__nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -0.18rem;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.72);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 180ms ease;
+}
+
+.site-footer__nav a:hover,
+.site-footer__nav a:focus-visible {
+  opacity: 1;
+  color: #fff;
+}
+
+.site-footer__nav a:hover::after,
+.site-footer__nav a:focus-visible::after {
+  transform: scaleX(1);
+}
+
+.site-footer__legal {
+  grid-column: 1 / -1;
+  margin-top: 0.15rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(244, 241, 234, 0.12);
+  font-size: 0.84rem;
+  color: rgba(244, 241, 234, 0.62);
+}
+
+@media (max-width: 768px) {
+  .site-footer__inner {
+    grid-template-columns: minmax(0, 1fr);
+    align-items: flex-start;
+    padding: 1.2rem 1.1rem;
+  }
+
+  .site-footer__nav {
+    justify-content: flex-start;
+    gap: 0.85rem;
+  }
+}

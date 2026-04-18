@@ -1,0 +1,49 @@
+<section class="services-page section">
+  <div class="container services-page__frame surface-card">
+    <app-page-hero
+      [eyebrow]="pageIntro()?.eyebrow"
+      [title]="pageIntro()?.title ?? ''"
+      [imageUrl]="pageIntro()?.imageUrl"
+      imageAlt="Services overview"
+    >
+      <p class="services-page__lede">{{ pageContent().hero?.lede }}</p>
+      <p>{{ pageContent().hero?.paragraph }}</p>
+    </app-page-hero>
+
+    <section class="services-page__body" aria-labelledby="services-belief-title">
+      <article class="services-page__block services-page__block--belief">
+        <h2 id="services-belief-title">{{ pageContent().belief?.title }}</h2>
+        @for (paragraph of pageContent().belief?.paragraphs ?? []; track paragraph) {
+          <p>{{ paragraph }}</p>
+        }
+        <ul class="services-page__belief-points">
+          @for (point of pageContent().belief?.points ?? []; track point) {
+            <li>{{ point }}</li>
+          }
+        </ul>
+      </article>
+
+      <article class="services-page__block services-page__block--intro" aria-labelledby="services-overview-title">
+        <h2 id="services-overview-title">{{ pageContent().overview?.title }}</h2>
+        <p class="services-page__intro-kicker">{{ pageContent().overview?.kicker }}</p>
+        <p>{{ pageContent().overview?.paragraph }}</p>
+      </article>
+
+      <section class="services-page__split" aria-label="Service focus areas">
+        <article class="services-page__block services-page__block--ai" aria-labelledby="ai-title">
+          <h2 id="ai-title">{{ pageContent().ai?.title }}</h2>
+          <p>{{ pageContent().ai?.paragraph }}</p>
+        </article>
+
+        <article class="services-page__block services-page__block--apps" aria-labelledby="apps-title">
+          <h2 id="apps-title">{{ pageContent().applications?.title }}</h2>
+          <p>{{ pageContent().applications?.paragraph }}</p>
+        </article>
+      </section>
+
+      <blockquote class="services-page__quote">
+        "{{ pageContent().quote }}"
+      </blockquote>
+    </section>
+  </div>
+</section>

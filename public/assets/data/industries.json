@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Retail",
+    "imageUrl": "assets/images/industries/retail.svg"
+  },
+  {
+    "title": "Tele Communication",
+    "imageUrl": "assets/images/industries/telecom.svg"
+  },
+  {
+    "title": "Financial",
+    "imageUrl": "assets/images/industries/financial.svg"
+  },
+  {
+    "title": "Manufacturing",
+    "imageUrl": "assets/images/industries/manufacturing.svg"
+  },
+  {
+    "title": "Insurance",
+    "imageUrl": "assets/images/industries/insurance.svg"
+  }
+]

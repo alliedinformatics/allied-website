@@ -1,0 +1,32 @@
+@if (finalCta(); as cta) {
+  <section class="home-page__final-cta">
+    <img
+      class="home-page__final-cta-image"
+      [ngSrc]="cta.imageUrl || 'assets/images/home/content-bottom-bg.jpg'"
+      alt=""
+      width="1920"
+      height="620"
+    />
+
+    <div class="home-page__final-cta-overlay"></div>
+
+    <div class="home-page__final-cta-content">
+      @if (cta.eyebrow) {
+        <span class="eyebrow home-page__final-cta-eyebrow">{{ cta.eyebrow }}</span>
+      }
+
+      <h2>{{ cta.title }}</h2>
+
+      @if (cta.summary) {
+        <p>{{ cta.summary }}</p>
+      }
+
+      <a
+        class="button button--primary home-page__final-cta-button"
+        [routerLink]="cta.ctaRoute"
+      >
+        {{ cta.ctaLabel }}
+      </a>
+    </div>
+  </section>
+}

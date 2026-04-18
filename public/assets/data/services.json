@@ -1,0 +1,101 @@
+{
+  "pageIntro": {
+    "eyebrow": "Our Services",
+    "title": "Services",
+    "summary": "Since over 30 years, Allied Informatics has had the pleasure of helping businesses and organizations of a vast scale and structure. Helping them modernize, transform and achieve scalable solutions over a wide area of aspects, we have become a leader in IT Consulting firms.",
+    "imageUrl": "assets/images/services/services-desk.jpg"
+  },
+  "pageContent": {
+    "hero": {
+      "lede": "Built on trust for 30+ years",
+      "paragraph": "Since over 30 years, Allied Informatics has had the pleasure of helping businesses and organizations of a vast scale and structure."
+    },
+    "belief": {
+      "title": "Why people believe in us",
+      "paragraphs": [
+        "Helping organizations modernize, transform and achieve scalable solutions over a wide area of aspects, we have become a leader in IT Consulting firms. We have acquired precious knowledge in solving any IT challenges by providing customized services to highly demanding projects.",
+        "With impactful consulting that directly relies on the communication between your clients and your company, we carefully analyze your performance and resolve your challenges. To help you propel your business forward, we provide a technological roadmap that ensures uninterrupted support in the critical aspects of your business.",
+        "Through rewarding quality management systems, we ensure fast development and 100% application stability at all times."
+      ],
+      "points": [
+        "Customized consulting for highly demanding and complex IT projects.",
+        "Performance-led analysis with clear communication between clients and businesses.",
+        "A practical technology roadmap backed by uninterrupted support.",
+        "Fast development cycles with a strong focus on application stability."
+      ]
+    },
+    "overview": {
+      "title": "How We Support Your Growth",
+      "kicker": "IT Services and Cyber Security Solutions",
+      "paragraph": "At Allied Informatics, we understand the importance behind finding the right set of skill that is directly privy to the success of your business. One cannot agree more with the fact that it can sometimes be difficult to find the right people. Fortunately for you, we have a workforce that is trained and instructed to carry out this single task."
+    },
+    "ai": {
+      "title": "Artificial intelligence",
+      "paragraph": "Allied Informatics enables companies to unleash their true potential through data-driven and artificial intelligence driven solutions to stay afloat in today's competitive market. We use a sequence of systems to watch, comprehend, learn and act, enabling humans to produce more efficient outcomes."
+    },
+    "applications": {
+      "title": "Application Development",
+      "paragraph": "We have in-house technology experts with countless years of experience in delivering seamless, intuitive and smart applications that are customized for maximum efficiency of your business. With the growth in mobile applications, it is coherent to have a personalized app for your business."
+    },
+    "quote": "Allied Informatics measures the success of a project based upon OUR CLIENT'S satisfaction with our delivery"
+  },
+  "items": [
+    {
+      "title": "Digital Engineering",
+      "summary": "Design and build modern, responsive digital engineering solutions that are fast, secure, and aligned to your business goals.",
+      "imageUrl": "assets/images/home/service-web.jpg",
+      "highlights": [
+        "Full-stack development expertise",
+        "Cloud-native architecture",
+        "Responsive, accessible interfaces"
+      ]
+    },
+    {
+      "title": "Cloud Technologies & DevOps",
+      "summary": "Accelerate releases with scalable cloud architecture, automation pipelines, and reliable infrastructure operations.",
+      "imageUrl": "assets/images/home/service-cloud.jpg",
+      "highlights": [
+        "Cloud migration and deployment",
+        "CI/CD pipeline automation",
+        "Infrastructure as Code"
+      ]
+    },
+    {
+      "title": "Data Analytics",
+      "summary": "Turn raw business data into actionable insights through dashboards, reporting, and decision-focused analytics solutions.",
+      "imageUrl": "assets/images/home/service-analytics.jpg",
+      "highlights": [
+        "Advanced reporting and dashboards",
+        "Business intelligence solutions",
+        "Data-driven decision making"
+      ]
+    },
+    {
+      "title": "IT Services and Cyber Security Solutions",
+      "summary": "At Allied Informatics, we understand the importance behind finding the right set of skill that is directly privy to the success of your business. We have a trained and instructed workforce to support your critical IT infrastructure and security needs.",
+      "highlights": [
+        "Managed IT services",
+        "Security audits and assessments",
+        "24/7 support and monitoring"
+      ]
+    },
+    {
+      "title": "Artificial Intelligence & Machine Learning",
+      "summary": "Allied Informatics enables companies to unleash their true potential through data-driven and artificial intelligence driven solutions. We use a sequence of systems to watch, comprehend, learn and act enabling humans to produce more efficient outcomes.",
+      "highlights": [
+        "AI/ML model development",
+        "Natural Language Processing",
+        "Predictive analytics"
+      ]
+    },
+    {
+      "title": "Application Development",
+      "summary": "We have in-house technology experts with countless years of unchallengeable experience in delivering seamless, intuitive and smart applications that are customized for maximum efficiency of your business.",
+      "highlights": [
+        "Custom software development",
+        "Mobile applications",
+        "Enterprise solutions"
+      ]
+    }
+  ]
+}

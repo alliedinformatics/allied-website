@@ -1,0 +1,124 @@
+<section class="contact-page section">
+  <div class="container contact-page__frame surface-card">
+    <app-page-hero
+      [eyebrow]="pageIntro()?.eyebrow"
+      [title]="pageIntro()?.title ?? ''"
+      [summary]="pageIntro()?.summary"
+      [imageUrl]="pageIntro()?.imageUrl"
+      [imageAlt]="'Contact Allied Informatics'"
+    />
+
+    <section class="contact-page__grid">
+      <section class="contact-page__details">
+        <span class="eyebrow">Details</span>
+
+        <dl class="contact-page__detail-list">
+          <div>
+            <dt>Email</dt>
+            <dd>
+              @if (contact().emails?.length) {
+                @for (email of contact().emails ?? []; track email) {
+                  <a [href]="'mailto:' + email">{{ email }}</a>
+                }
+              }
+            </dd>
+          </div>
+
+          <div>
+            <dt>Phone</dt>
+            <dd>
+              @if (contact().phones?.length) {
+                @for (phone of contact().phones ?? []; track phone) {
+                  <a [href]="'tel:' + phone">{{ phone }}</a>
+                }
+              }
+            </dd>
+          </div>
+
+          <div>
+            <dt>ZIP</dt>
+            <dd>{{ contact().postalCode || content().brand.postalCode || '—' }}</dd>
+          </div>
+
+          @if (contact().addressLines?.length) {
+            <div>
+              <dt>Address</dt>
+              <dd>
+                @for (line of contact().addressLines ?? []; track line) {
+                  <span>{{ line }}</span>
+                }
+              </dd>
+            </div>
+          }
+        </dl>
+
+        @if (contact().socials?.length) {
+          <div class="contact-page__socials">
+            @for (item of contact().socials ?? []; track item.href) {
+              <a [href]="item.href" target="_blank" rel="noreferrer">{{ item.label }}</a>
+            }
+          </div>
+        }
+      </section>
+
+      <section class="contact-page__form">
+        <form (submit)="submit($event)" novalidate>
+          <div class="contact-page__row">
+            <label>
+              <span>Name</span>
+              <input type="text" [formField]="contactForm.name" />
+              @if (contactForm.name().invalid() && submitted()) {
+                <small class="contact-page__error">Name is required.</small>
+              }
+            </label>
+            <label>
+              <span>Phone</span>
+              <input type="tel" [formField]="contactForm.phone" />
+            </label>
+          </div>
+
+          <div class="contact-page__row">
+            <label>
+              <span>Email</span>
+              <input type="email" [formField]="contactForm.email" />
+              @if (contactForm.email().invalid() && submitted()) {
+                <small class="contact-page__error">
+                  @if (contactForm.email().errors().length) {
+                    {{ contactForm.email().errors()[0].message }}
+                  } @else {
+                    Enter a valid email address.
+                  }
+                </small>
+              }
+            </label>
+            <label>
+              <span>Inquiry</span>
+              <input type="text" [formField]="contactForm.inquiry" />
+            </label>
+          </div>
+
+          <label>
+            <span>Message</span>
+            <textarea rows="6" [formField]="contactForm.message"></textarea>
+            @if (contactForm.message().invalid() && submitted()) {
+              <small class="contact-page__error">Message is required.</small>
+            }
+          </label>
+
+          <button class="button button--primary" type="submit">
+            {{ contact().formCtaLabel || 'Send inquiry' }}
+          </button>
+        </form>
+      </section>
+
+      <aside class="contact-page__map">
+        <iframe
+          title="Allied Informatics map"
+          [src]="mapUrl()"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </aside>
+    </section>
+  </div>
+</section>

@@ -1,0 +1,71 @@
+@if (career(); as c) {
+  <section class="career-details section">
+    <div class="container">
+      <article class="career-details__panel surface-card">
+        <div class="career-details__top">
+          <a class="career-details__back" routerLink="/careers">Back to Careers</a>
+        </div>
+
+        <h1>{{ c.title }}</h1>
+
+        <div class="career-details__meta-list" aria-label="Job metadata">
+          <p class="career-details__meta-item">
+            <span class="career-details__meta-label">Location</span>
+            <span class="career-details__meta-value">{{ c.location || 'Location not listed' }}</span>
+          </p>
+          @if (c.datePosted) {
+            <p class="career-details__meta-item">
+              <span class="career-details__meta-label">Date Posted</span>
+              <span class="career-details__meta-value">{{ c.datePosted }}</span>
+            </p>
+          }
+          @if (c.jobType) {
+            <p class="career-details__meta-item">
+              <span class="career-details__meta-label">Employment Type</span>
+              <span class="career-details__meta-value">{{ c.jobType }}</span>
+            </p>
+          }
+        </div>
+
+        @if (c.summary) {
+          <div class="career-details__summary">
+            <h2>Role Summary</h2>
+            <p>{{ c.summary }}</p>
+          </div>
+        }
+
+        <div class="career-details__summary">
+          <h2>Requirements</h2>
+          @if (c.requirements?.length) {
+            <ul class="career-details__requirements">
+              @for (requirement of c.requirements; track requirement) {
+                <li>{{ requirement }}</li>
+              }
+            </ul>
+          } @else {
+            <p>Requirements are available on the application page.</p>
+          }
+        </div>
+
+        <div class="career-details__actions">
+          <a class="button button--primary" [href]="buildApplyMailto(c)">
+            Apply Now
+          </a>
+          <a class="career-details__link" routerLink="/careers">View All Roles</a>
+        </div>
+      </article>
+    </div>
+  </section>
+} @else {
+  <section class="career-details section">
+    <div class="container">
+      <article class="career-details__panel surface-card">
+        <a class="career-details__back" routerLink="/careers">Back to Careers</a>
+        <h1>Career not found</h1>
+        <p class="career-details__empty-copy">
+          This role may have been removed or the link is invalid.
+        </p>
+      </article>
+    </div>
+  </section>
+}

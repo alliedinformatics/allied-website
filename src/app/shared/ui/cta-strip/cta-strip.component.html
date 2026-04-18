@@ -1,0 +1,17 @@
+<section class="cta-strip section">
+  <div class="container">
+    <div class="cta-strip__panel surface-card">
+      <div class="cta-strip__copy">
+        <h2>{{ title() }}</h2>
+        @if (summary()) {
+          <p>{{ summary() }}</p>
+        }
+      </div>
+
+      <a class="button button--primary" [routerLink]="ctaRoute()">
+        {{ ctaLabel() }}
+      </a>
+    </div>
+  </div>
+</section>
+

@@ -1,0 +1,41 @@
+<section class="home-page__section">
+  <div class="home-page__heading">
+    <span class="eyebrow">{{ eyebrow() }}</span>
+    <h2>{{ title() }}</h2>
+  </div>
+
+  <div class="home-page__cards home-page__cards--three">
+    @if (servicesPreview().length) {
+      @for (service of servicesPreview(); track service.title) {
+        <article class="info-card">
+          <div class="card-media">
+            @if (service.imageUrl) {
+              <img
+                [ngSrc]="service.imageUrl"
+                [alt]="service.title"
+                width="640"
+                height="420"
+              />
+            }
+          </div>
+          <h3>{{ service.title }}</h3>
+          @if (service.summary) {
+            <p>{{ service.summary }}</p>
+          }
+        </article>
+      }
+    } @else {
+      @for (slot of placeholderIndexes(); track slot) {
+        <article class="info-card info-card--placeholder">
+          <div class="card-media card-media--placeholder"></div>
+          <app-placeholder
+            [title]="true"
+            [copyLines]="2"
+            [tight]="true"
+            [shortLastLine]="true"
+          />
+        </article>
+      }
+    }
+  </div>
+</section>

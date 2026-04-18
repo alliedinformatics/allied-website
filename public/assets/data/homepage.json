@@ -1,0 +1,49 @@
+{
+  "hero": {
+    "eyebrow": "Founded 1991",
+    "title": "Allied Informatics",
+    "summary": "We are an integrated company equipped to tackle and provide any solution relating to your IT infrastructure including advanced technology deployment, product development, IT consulting and even artificial intelligence (AI) or machine learning.",
+    "ctaLabel": "Contact",
+    "ctaRoute": "/contact",
+    "imageUrl": "assets/images/page-intros/office.jpg"
+  },
+  "spotlight": {
+    "ariaLabel": "Company summary",
+    "text": "With 30+ years of delivery excellence, Allied Informatics helps organizations modernize technology, accelerate outcomes, and scale with confidence."
+  },
+  "sections": {
+    "services": {
+      "eyebrow": "Services",
+      "title": "What We Do"
+    },
+    "focusAreas": {
+      "eyebrow": "Focus Areas",
+      "title": "Where We Focus"
+    },
+    "operationalStructure": {
+      "eyebrow": "Operational Structure",
+      "title": "How We Work",
+      "paragraphs": [
+        "Our arsenal of highly qualified programmers and analysts are pioneers in offering guidance in the most critical business areas. We work as one to drive excellence and serve our clients with solutions that actually work. In a progressive basis, we will deliver consistent and high-quality services.",
+        "Allied Informatics is committed to 100% customer satisfaction and pays special attention to customer priorities ahead of anything else."
+      ],
+      "quote": "We provide the right talent—when and where you need it.",
+      "industriesLabel": "Industries We Serve",
+      "footerText": "The main focus at Allied Informatics is our commitment to customer satisfaction. We work closely with each client to ensure that all positions and project needs are met successfully.",
+      "footerCtaLabel": "View All Services",
+      "footerCtaRoute": "/services"
+    },
+    "deliveryModels": {
+      "eyebrow": "Delivery Models",
+      "title": "Flexible Engagement Models"
+    }
+  },
+  "finalCta": {
+    "eyebrow": "Let's get started",
+    "title": "Are you ready for a better, more productive business?",
+    "summary": "Stop worrying about technology problems. Focus on your business. Let us provide the support you deserve.",
+    "ctaLabel": "Contact Us Now",
+    "ctaRoute": "/contact",
+    "imageUrl": "assets/images/home/content-bottom-bg.jpg"
+  }
+}

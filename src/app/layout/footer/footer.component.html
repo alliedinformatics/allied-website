@@ -1,0 +1,22 @@
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <div class="site-footer__brand">
+      @if (siteContent().brand.logoUrl) {
+        <img
+          class="site-footer__logo"
+          [src]="siteContent().brand.logoUrl"
+          [alt]="siteContent().brand.name"
+        />
+      } @else {
+        <span class="eyebrow">Allied Informatics</span>
+      }
+    </div>
+
+    <nav class="site-footer__nav" aria-label="Footer">
+      <a routerLink="/privacy-policy">Privacy Policy</a>
+      <a routerLink="/terms-and-conditions">Terms &amp; Conditions</a>
+    </nav>
+
+    <p class="site-footer__legal">&copy; {{ currentYear }} All Rights Reserved.</p>
+  </div>
+</footer>

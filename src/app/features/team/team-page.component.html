@@ -1,0 +1,39 @@
+<section class="team-page section">
+  <div class="container team-page__frame surface-card">
+    <app-page-hero
+      [eyebrow]="pageIntro()?.eyebrow"
+      [title]="pageIntro()?.title ?? ''"
+      [summary]="pageIntro()?.summary"
+      [imageUrl]="pageIntro()?.imageUrl"
+      imageAlt="Team leadership"
+    />
+
+    <section class="team-page__grid">
+      @if (members().length) {
+        @for (member of members(); track member.name; let i = $index) {
+          <article class="team-card">
+            <div class="team-card__portrait">
+              <img [src]="member.imageUrl" alt="" />
+            </div>
+            <div class="team-card__body">
+              <h2>{{ member.name }}</h2>
+              <p class="team-card__title">{{ member.title }}</p>
+              @if (member.bio) {
+                <p class="team-card__bio">{{ member.bio }}</p>
+              }
+              @if (member.highlights?.length) {
+                <ul class="team-card__highlights">
+                  @for (highlight of member.highlights ?? []; track highlight) {
+                    <li>{{ highlight }}</li>
+                  }
+                </ul>
+              }
+            </div>
+          </article>
+        }
+      } @else {
+        <article class="team-card"></article>
+      }
+    </section>
+  </div>
+</section>

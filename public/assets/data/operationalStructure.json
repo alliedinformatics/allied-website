@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Business Focus",
+    "summary": "Providing exceptional technical talent in this ever competitive business environment and helping your business achieve your milestones effectively.",
+    "imageUrl": "assets/images/home/operational-business.jpg"
+  },
+  {
+    "title": "Project Development",
+    "summary": "Delivering exceptional results in short-time frames with transformative workforce. In-house experts working on your project and delivering cutting edge solutions.",
+    "imageUrl": "assets/images/home/operational-project.jpg"
+  },
+  {
+    "title": "Off-Shore",
+    "summary": "Dedicated offshore team consisting of unparalleled software engineers providing tailor-made solutions to innovate and maintain your operations.",
+    "imageUrl": "assets/images/home/operational-offshore.jpg"
+  }
+]

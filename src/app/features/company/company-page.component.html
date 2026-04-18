@@ -1,0 +1,87 @@
+<section class="company-page section">
+  <div class="container company-page__frame surface-card">
+    <app-page-hero
+      [eyebrow]="pageIntro()?.eyebrow"
+      [title]="pageIntro()?.title ?? ''"
+      [imageUrl]="pageIntro()?.imageUrl"
+      imageAlt="Company overview"
+    >
+      <p>{{ company().pageContent?.hero?.introLabel }}</p>
+      <p class="company-page__lede">
+        {{ company().pageContent?.hero?.lede }}
+      </p>
+    </app-page-hero>
+
+    <section class="company-page__body" aria-labelledby="why-allied-title">
+      <article class="company-page__block company-page__block--why">
+        <div>
+          <h2 id="why-allied-title">{{ company().pageContent?.why?.title }}</h2>
+          <p class="company-page__subtitle">{{ company().pageContent?.why?.subtitle }}</p>
+        </div>
+
+        @for (paragraph of company().pageContent?.why?.paragraphs ?? []; track paragraph) {
+          <p>{{ paragraph }}</p>
+        }
+
+        <ul class="company-page__highlights">
+          @for (point of company().pageContent?.why?.highlights ?? []; track point) {
+            <li>{{ point }}</li>
+          }
+        </ul>
+      </article>
+
+      <article class="company-page__block company-page__block--mission" aria-labelledby="mission-title">
+        <h2 id="mission-title">{{ company().pageContent?.mission?.title }}</h2>
+        <p>{{ company().pageContent?.mission?.paragraph }}</p>
+        <blockquote>
+          "{{ company().pageContent?.mission?.quote }}"
+        </blockquote>
+      </article>
+
+      <section class="company-page__split" aria-label="Company identity and guiding principles">
+        <article class="company-page__block company-page__block--identity" aria-labelledby="who-we-are-title">
+          <h2 id="who-we-are-title">{{ company().pageContent?.identity?.title }}</h2>
+          <p>{{ company().pageContent?.identity?.paragraph }}</p>
+        </article>
+
+        <article class="company-page__block company-page__block--motto" aria-labelledby="motto-title">
+          <h2 id="motto-title">{{ company().pageContent?.motto?.title }}</h2>
+          <p>{{ company().pageContent?.motto?.paragraph }}</p>
+        </article>
+      </section>
+
+      <article class="company-page__block company-page__block--philosophy" aria-labelledby="business-philosophy-title">
+        <h2 id="business-philosophy-title">{{ company().pageContent?.philosophy?.title }}</h2>
+        <p>{{ company().pageContent?.philosophy?.paragraph }}</p>
+        <ul>
+          @for (point of company().pageContent?.philosophy?.points ?? []; track point) {
+            <li>{{ point }}</li>
+          }
+        </ul>
+      </article>
+    </section>
+
+    <section class="company-page__stats">
+      <div class="company-page__stat">
+        <strong>{{ content().brand.foundedYear || 1991 }}</strong>
+        <span>{{ company().pageContent?.stats?.founded?.label || 'Founded' }}</span>
+        <small>{{ company().pageContent?.stats?.founded?.note || 'Established in Atlanta, Georgia' }}</small>
+      </div>
+      <div class="company-page__stat">
+        <strong>{{ content().brand.postalCode || 30097 }}</strong>
+        <span>{{ company().pageContent?.stats?.zip?.label || 'ZIP Code' }}</span>
+        <small>{{ company().pageContent?.stats?.zip?.note || 'Serving locally and globally from HQ' }}</small>
+      </div>
+      <div class="company-page__stat">
+        <strong>{{ services().length || 6 }}</strong>
+        <span>{{ company().pageContent?.stats?.serviceTracks?.label || 'Service Tracks' }}</span>
+        <small>{{ company().pageContent?.stats?.serviceTracks?.note || 'Integrated IT and digital capabilities' }}</small>
+      </div>
+      <div class="company-page__stat">
+        <strong>{{ team().length || 2 }}</strong>
+        <span>{{ company().pageContent?.stats?.leadershipProfiles?.label || 'Leadership Profiles' }}</span>
+        <small>{{ company().pageContent?.stats?.leadershipProfiles?.note || 'Focused experts guiding every engagement' }}</small>
+      </div>
+    </section>
+  </div>
+</section>

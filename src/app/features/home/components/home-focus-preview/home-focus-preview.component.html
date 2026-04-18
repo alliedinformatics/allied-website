@@ -1,0 +1,41 @@
+<section class="home-page__section">
+  <div class="home-page__heading">
+    <span class="eyebrow">{{ eyebrow() }}</span>
+    <h2>{{ title() }}</h2>
+  </div>
+
+  <div
+    class="home-page__cards home-page__cards--three home-page__cards--overlay"
+  >
+    @if (focusAreas().length) {
+      @for (area of focusAreas(); track area.title) {
+        <article
+          class="focus-card focus-card--overlay"
+          [style.backgroundImage]="'url(' + area.imageUrl + ')'"
+        >
+          <div class="focus-card__content">
+            <h3>{{ area.title }}</h3>
+            @if (area.summary) {
+              <p>{{ area.summary }}</p>
+            }
+          </div>
+        </article>
+      }
+    } @else {
+      @for (slot of placeholderIndexes(); track slot) {
+        <article
+          class="focus-card focus-card--overlay focus-card--placeholder"
+        >
+          <div class="focus-card__content">
+            <app-placeholder
+              [title]="true"
+              [copyLines]="2"
+              [tight]="true"
+              [shortLastLine]="true"
+            />
+          </div>
+        </article>
+      }
+    }
+  </div>
+</section>

@@ -1,0 +1,31 @@
+{
+  "pageIntro": {
+    "eyebrow": "Our Leadership",
+    "title": "Leadership",
+    "summary": "",
+    "imageUrl": "assets/images/team/team-leadership-hero.jpg"
+  },
+  "members": [
+    {
+      "name": "Kris Gadde",
+      "title": "Founder & CEO, Allied Informatics, Inc.",
+      "bio": "Kris Gadde is the Founder and Chief Executive Officer of Allied Informatics, Inc., a wellestablished IT services firm he has successfully led since its inception in 1991. Under his strategic leadership, the company has consistently earned a place among the Top 100 Indian American businesses for four consecutive years.",
+      "imageUrl": "assets/images/team/kris.png",
+      "highlights": [
+        "Mechanical Engineering",
+        "Master's in Computer Science",
+        "Florida Institute of Technology"
+      ]
+    },
+    {
+      "name": "Suma Potini",
+      "title": "CIO, Allied Informatics, Inc.",
+      "bio": "Suma Potini, CIO of Allied Informatics, Inc., is a forward-thinking technology innovator and entrepreneur, committed to driving transformative change through cutting-edge solutions. With extensive experience in delivering large-scale IT projects, she excels at converting complex challenges into strategic innovations that significantly enhance efficiency and profitability.",
+      "imageUrl": "assets/images/team/suma.png",
+      "highlights": [
+        "Executive MBA in International Business",
+        "Master's in Computer Science"
+      ]
+    }
+  ]
+}
